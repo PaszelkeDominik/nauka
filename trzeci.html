@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tydzień trzeci</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="images/book.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body>
+  <header id="top">
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="pierwszy.html">Tydzień pierwszy</a>
+      <a href="drugi.html">Tydzień drugi</a>
+      <a href="trzeci.html">Tydzień trzeci✅</a>
+    </nav>
+  </header>
+  <main>
+    <header>
+      <h1 class="main-heading">Tydzień trzeci</h1>
+    </header>
+    <section>
+      <h2 class="lessons-heading">Lekcje</h2>
+      <p class="lessons-display">
+        Lekcja 03.01 Tydzień III + rozwiązania tydzień II
+        <br>Lekcja 03.02 Kanban
+        <br>Lekcja 03.03 WTF: HTML II
+        <br>Lekcja 03.04 Opowieść o wężu, kebabie, wielbłądzie i Pascalu
+        <br>Lekcja 03.05 WTF: CSS II
+        <br>Lekcja 03.06 Jak działa Internet i przeglądarka
+        <br>Lekcja 03.07 WTF: JavaScript
+        <br>Lekcja 03.08 Terminal
+        <br>Lekcja 03.09 Prace domowe tydzień III
+      </p>
+      <article>
+        <h3 class="kanban-heading">Kanban</h3>
+        <img src="images/kanban-tablica.jpg" alt="tablica z karteczkami, kanban" title="kanban">
+        <p class="kanban-content">
+          Kanban oznacza spis widoczny. Pozwala na planowanie pracy i śledzenie postępów. Dzielimy zadania na minimum 3
+          kolumny:<b> TO DO | DOING | DONE</b>
+          <br>Narzędzie pozwalające pracować w metodologi kanban <a href="https://trello.com"
+            target="_blank">trello</a>.
+        </p>
+      </article>
+      <article>
+        <h3 class="html-heading">WTF: HTML II</h3>
+        <img src="images/logo-html5.png" alt="logo HTML5">
+        <p class="html-content">
+          Poznajemy nowe elementy:
+          <br> &#60;br&#62; nowa lina
+          <br> &#60;b&#62; &#60;b&#62; vs &#60;i&#62;&#60;em&#62;
+          <br> &#60;v&#62; &#60;i&#62; nie mają znaczenia semantycznego – służą do wyróżniania tekstu
+          <br>&#60;b&#62; -podkreśla wysoką istotność i poważność frazy w nim zawartej
+          <br> &#60;em&#62; - podkreśla, że tekst może mieć inne znaczenie( np. ironia).
+          <br>&#60;a href=”...” target=”...”&#62; opis łącza&#60;/a&#62; – a linki.
+          <br>&#60;element id=”moj-identyfikator”&#62; atrybut id -identyfikuje element( przydaje się do nawigacji w
+          obrębie
+          dokumentu)
+          <br> &#60;nav&#62; Nawivacja
+          <br> &#60;img src=”...” alt=”...”&#62; img- obrazek o adresie
+          <br>spis atrybutów „globalnych” <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+            target="_blank">link</a>
+        </p>
+      </article>
+      <article>
+        <h3 class="naming-heading">Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h3>
+        <img src="images/camel-case.png" alt="wielbłąd">
+        <p class="naming-content">
+          * Pliki:małą literą, kebab-Case lub snake_Case
+          * Funkcje: camelCase
+          * Klasy: kebab-Case
+          * Zmienne: camelCase
+        </p>
+      </article>
+      <article>
+        <h3 class="css-heading">WTF: CSS II</h3>
+        <img src="images/logo-css.png" alt="logo css">
+        <p class="css-content">
+          * Stylowanie <em>inline</em>
+          * Id za pomocą #
+          * Klasa za pomocą . (kropki)
+          * Element po nazwie elementu
+          * Important po wartosci właściwości w naszej regule wpisujemy !important;
+        </p>
+      </article>
+      <article>
+        <h3 class="browser-heading">Jak działa Internet i przeglądarka</h3>
+        <img src="images/logo-przegladarki-internetowe.jpg" alt="logo przeglądarek internetowych">
+        <p class="browser-content">
+          * HTTP : Protokół, którego używa Twoja przeglądarka (<em>Hypertext Transfer Protocol</em>)
+          * HTTPS : Protokół, którego używa Twoja przeglądarka wersja szyfrowana (<em>Hypertext Transfer Protocol
+            Secure</em>)
+          * URL : Uniform Resource Locator
+        </p>
+        <h4 class="http-status-code-heading">Kody odpowiedzi</h4>
+        <p class="http-status-code-content">
+          - 1xx - wczytywanie
+          <br> - 200 - wszystko ok
+          <br> - 30x – szukasz w złym miejscu
+          <br> - 404 –Nie znaleziono – serwer nie odnalazł zasobu według podanego URL ani niczego co by wskazywało na
+          istnienie takiego zasobu w przeszłości
+          <br> -50x – Błąd zewnętrzny serwera
+        </p>
+      </article>
+      <article>
+        <h3 class="js-heading">WTF: JavaScript</h3>
+        <img src="images/logo-js.png" alt="logo JavaScript">
+        <p class="js-content">
+          Aby dołączyć plik ze skryptem musimy wpisać na samym końcu naszego <b>body</b> &#60;script
+          src=”main.js”&#62;&#60;/script&#62; . Kod JS uruchamia się raz (po załadowaniu strony).
+        </p>
+        <section>
+          <h4 class="js-sub-heading">ECMAScript 6+</h4>
+          <p class="js-content">
+            ECMAScript jest to ustandaryzowany przez organizację ECMA skryptowy język programowania. JavaScript
+            implementuje rzeczy ze specyfikacji ECMAScript.
+            Rozwój ECMAScript mocno przyśpieszył przez szerokie wykorzystywanie JavaScriptu.
+          </p>
+        </section>
+        <section>
+          <h4 class="js-sub-heading">Narzędzia w JS</h4>
+          <p class="js-content">
+            const firstName = 'Dominik';
+            <br>const age = 30;
+            <br>console.log(firstName);
+            <br>console.log(age);
+            <br>console.log(`Proste działanie: ${age} + 5 = ${age+5}`);
+            <br>console.log('Inaczej zapisane');
+            <br>console.log('Proste działanie: ' + age + ' + 5 = ' + (age+5));
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <h3 class="terminal-heading">Terminal</h3>
+        <img src="images/logo-terminal.png" alt="logo Terminal">
+        <p class="terminal-content">
+          cd~ przejście do katalogu domowego
+          <br>ls ~ wypisanie zawartości katalogu
+          <br>cd .. przejście do katalogu wyżej
+          <br>cd <em>nazwa-katalogu</em> przejście do katalogu o podanej nazwie <em>nazwa-katalogu</em>
+          <br>code . uruchomienie visual studio code w aktualnym katalogu
+          <br>pwd wyświetlenie aktualnej ścieżki
+          <br>mkdir <em>nazwa-katalogu</em> stworzenie katalogu o danej nazwie <em>nazwa-katalogu</em>
+        </p>
+      </article>
+
+      <article>
+        <h3 class="homework-heading">Prace domowe tydzień III</h3>
+        <p class="homework-content">
+          Praca domowa zrobiona!
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2>Wiedza dodatkowa</h2>
+      <p>
+        Dodatkowe informacje na które natknąłem się w internetach, z własnej ciekawości
+      </p>
+      <article>
+        <h3>Jak zapisać literały HTLM-u w nim samy jako zwykły tekst?</h3>
+        <p>
+          Z początku potrzebowałem tylko &lt; i &gt; . Skończyło się na wygooglowaniu ich. Ale przy innej okazji
+          wykopałem listę innych znaków.Aby wpisać określony znak wpisujemy <b>&</b> a następnie odpowiednie
+          znaki referencyjne do określonego literału np. dla &gt; wpisujemy <b>&</b><b>g</b><b>t</b><b>;</b>
+          <br> Oto lista:
+          <br>&lt; <b>&</b><b>l</b><b>t</b><b>;</b>
+          <br>&gt; <b>&</b><b>g</b><b>t</b><b>;</b>
+          <br>&quot; <b>&</b><b>q</b><b>u</b><b>o</b><b>t</b><b>;</b>
+          <br>&apos; <b>&</b><b>a</b><b>p</b><b>o</b><b>s</b><b>;</b>
+          <br>&amp; <b>&</b><b>a</b><b>m</b><b>p</b><b>;</b>
+        </p>
+      </article>
+      <article>
+        <h3>Nowe atrybuty</h3>
+        <p>
+          * Atrybut <code>target</code> pozwala na ustawienie kontekstu w jakim przeglądarka powinna go otworzyć.
+          <strong>target równy _blank</strong> otwiera link w nowej karcie w naszej przeglądarce.
+          <code>target="_blank"</code>
+
+          <br>* Używając atrybutu <code>title</code> ustawiamy tytuł naszemu elementowi, np. dla obrazu, linku. Dzięki
+          czemu
+          użytkownikowi po najechaniu na element kursorem ukazuje się jego tytuł.
+        </p>
+      </article>
+      <article>
+        <h3>Nowe elementy</h3>
+        <p>
+          * <code>&lt;input type="text" disabled&gt;</code> oraz <code>&lt;input type="text" &gt;</code>
+          <br>Powyższy kod HTML da efekt:
+          <input type="text" disabled> oraz <input type="text">
+          <br>Atrybutowi <code>disabled</code> nie trzeba przypisywać wartości, ponieważ ma on tylko jedną. Samo dołączenie go ustawia
+          wartość na „true” tzn. <code>disabled=”disabled”</code>
+        </p>
+      </article>
+    </section>
+
+  </main>
+  <footer><a href="#top">Powrót na górę strony</a></footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+  background-color: cornsilk;
+}
+code{
+  background-color: rgba(220,220,220,.5);
+  background-color: rgb(198, 220, 241);
+  background-color: rgb(196, 216, 241);
+}
+
+.lessons-heading, .lessons-display{
+  font-family:cursive;
+  
+}
+.lessons-heading {
+  color: #3f612d;
+}
+.lessons-display {
+  color: #20493b;
+}
+
+.kanban-heading, .naming-heading, .browser-heading, .terminal-heading, 
+.website-layers-heading, .devtools-heading  {
+  color: #01486e;
+}
+
+.kanban-content, .naming-content, .browser-content, .terminal-content, 
+.website-layers-content, .devtools-content{
+  color: #6b2c39;
+}
+
+.http-status-code-heading{
+  color:#7a629a;
+}
+.http-status-code-content{
+  color: #a12a31;
+}
+.html-heading {
+  color: #f77f00;
+}
+.html-content{
+  color: #e75414;
+}
+.css-heading{
+  color: #04e762;
+}
+.css-content{
+  color: #049e43;
+}
+.js-heading{
+  color: #dc0073;
+}
+.js-sub-heading{
+  color: #4b0fbf;
+}
+.js-content{
+  color: #a52395;
+}
+.main-heading, .homework-heading{
+  color: #008bf8;
+}
+.website-description,.homework-content{
+  color: #3769d7;
+}
+
