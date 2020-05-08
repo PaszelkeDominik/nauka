@@ -176,15 +176,28 @@
         <h3>Block – Element – Modifier</h3>
         <p>
           BEM = BLOCK__ELEMENT—MODIFIER
-          <br>Sposób nazywania klas. Dzielimy kod na Blok potem ten blok na elementy i jeśli jest to koniecznie na modyfikator. Przed elementem stawiamy „__” a przed modyfikatorem ”--”. Stosujemy dwie klasy do jednego elementu jeżeli druga klasa dodaje jakieś specyficzne własności do elementu.
+          <br>Sposób nazywania klas. Dzielimy kod na Blok potem ten blok na elementy i jeśli jest to koniecznie na
+          modyfikator. Przed elementem stawiamy „__” a przed modyfikatorem ”--”. Stosujemy dwie klasy do jednego
+          elementu jeżeli druga klasa dodaje jakieś specyficzne własności do elementu.
           <br>Block – element nadrzendny
           <br>Element – część bloku( nie musi być bezpośrednim dzieckiem)
           <br>Modifier- jeśli element występuje w kilku wariacjach tworzymy dodatkową klasę.
         </p>
       </article>
-      <h3></h3>
+      <h3>DOMowe przedszkole</h3>
       <p>
+        DOM = Document Object Model
+        <br>” to co widzimy w devtools”. To „złożony w przeglądarce HTML. JavaScript może modyfikować DOM. 
+        <br>Za pomocą
+        funkcji <strong>document.querySelector(`.selector`)</strong> zwracamy node (węzeł) z HTML-a, selektor jest
+        zapisywany zgodnie z CSS.
+        <br><strong>const heading = document.querySelector(`.main-heading—js`);</strong>
+        <br>heading.innerHTML = `tekst który podmieniamy w miejscu na które wskazuje .main-heading—js` ;
+        <br> innerHTML – wewnętrzny HTML
 
+
+        <br>Pro tip – korzystając z BEM – tworzymy dodatkową klasę z modyfikatorem <strong>--js</strong> (ułatwia to
+        identyfikację / nie dopuszcza to potencjalnych problemów)
       </p>
       </article>
       <h3></h3>
