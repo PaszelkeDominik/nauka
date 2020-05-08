@@ -10,6 +10,6 @@ typeof name;
  console.log(typeof computer);
 
  const hello = document.querySelector(`.javascript-content--js`);
- hello.innerHTML = `Hello. <em>this message generate from JavaScript !!</em>`
+ hello.innerHTML = `Hello! <em>this message generate from JavaScript !!</em>`
  
 
