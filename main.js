@@ -8,5 +8,8 @@ typeof name;
  console.log(typeof name);
  console.log(typeof age);
  console.log(typeof computer);
+
+ const hello = document.querySelector(`.javascript-content--js`);
+ hello.innerHTML = `Hello. <em>this message generate from JavaScript !!</em>`
  
 
