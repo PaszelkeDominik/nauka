@@ -7,31 +7,31 @@
 }
 .independent-wrok{}
 .independent-wrok--heading{
-
+color: rgb(206, 87, 206);
 }
 .independent-wrok--content{
-
+color: rgb(138, 12, 192);
 }
 .independent-wrok__literal{}
 .independent-wrok__literal--heading{
-
+  color: blue;
 }
 .independent-wrok__literal--content{
-
+  color: darkblue;
 }
 .independent-wrok__attribute{}
 .independent-wrok__attribute--heading{
-
+color: blue;
 }
-.independent-wrok__attribute--contetn{
-
+.independent-wrok__attribute--content{
+  color: darkblue;
 }
 .independent-wrok__element{}
 .independent-wrok__element--heading{
-
+  color: blue;
 }
 .independent-wrok__element--content{
-
+  color: darkblue;
 }
 .lessons-list{}
 .lessons-list__heading{
@@ -79,13 +79,13 @@ left: 25%;
 .wrap-up__browser--heading,.wrap-up__browser__subsection--heading,.wrap-up__css--heading,.wrap-up__homework--heading,
 .wrap-up__html--heading,.wrap-up__js--heading,.wrap-up__js__subsection--heading,.wrap-up__layers--heading,
 .wrap-up__naming--heading,.wrap-up__tool--heading,.wrap-up__interview--heading,
-.independent-wrok__element--heading,.independent-wrok__literal--heading,.independent-wrok--heading{
+.independent-wrok__element--heading,.independent-wrok__literal--heading,.independent-wrok--heading,.independent-wrok__attribute--heading{
   margin-left:32px;
 }
 .wrap-up__browser--content,.wrap-up__browser__subsection--content,.wrap-up__css--content,.wrap-up__homework--content,
 .wrap-up__html--content,.wrap-up__js--content,.wrap-up__js__subsection--content,.wrap-up__layers--content,
 .wrap-up__naming--content,.wrap-up__tool--content,.wrap-up__interview--content,
-.independent-wrok__element--content,.independent-wrok__literal--content,.independent-wrok--content{
+.independent-wrok__element--content,.independent-wrok__literal--content,.independent-wrok--content,.independent-wrok__attribute--content{
   margin:16px;
 }
 .wrap-up__browser{}
