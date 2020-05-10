@@ -1,6 +1,6 @@
 
 .body{
-  margin: 0 8px 8px 8px;;
+  margin: 0 25% 8px ;;
   position: relative;
   min-height: 100%;
   background-color: cornsilk;
@@ -46,6 +46,7 @@
 .main__header{}
 .main__heading{
   color: #008bf8;
+
 }
 
 .navigaton--sticky{
@@ -66,6 +67,27 @@
 .website__description{
   color: #3769d7;
 }
+
+.wrap-up{}
+.wrap-up__heading{
+  color: #3f612d ;
+}
+.wrap-up--image{
+position: relative;
+left: 25%;
+}
+.wrap-up__browser--heading,.wrap-up__browser__subsection--heading,.wrap-up__css--heading,.wrap-up__homework--heading,
+.wrap-up__html--heading,.wrap-up__js--heading,.wrap-up__js__subsection--heading,.wrap-up__layers--heading,
+.wrap-up__naming--heading,.wrap-up__tool--heading,.wrap-up__interview--heading,
+.independent-wrok__element--heading,.independent-wrok__literal--heading,.independent-wrok--heading{
+  margin-left:32px;
+}
+.wrap-up__browser--content,.wrap-up__browser__subsection--content,.wrap-up__css--content,.wrap-up__homework--content,
+.wrap-up__html--content,.wrap-up__js--content,.wrap-up__js__subsection--content,.wrap-up__layers--content,
+.wrap-up__naming--content,.wrap-up__tool--content,.wrap-up__interview--content,
+.independent-wrok__element--content,.independent-wrok__literal--content,.independent-wrok--content{
+  margin:16px;
+}
 .wrap-up__browser{}
 .wrap-up__browser--heading{
   color: #01486e;
@@ -82,10 +104,10 @@
 }
 .wrap-up__css{}
 .wrap-up__css--heading{
-  color: #04e762;
+  color: #0bd45f;
 }
 .wrap-up__css--content{
-  color: #049e43;
+  color: #067c37;
 }
 .wrap-up__homework{}
 .wrap-up__homework--heading{
@@ -100,6 +122,13 @@
 }
 .wrap-up__html--content{
   color: #e75414;
+}
+.wrap-up__interview{}
+.wrap-up__interview--heading{
+color: crimson;
+}
+.wrap-up__interview--content{
+  color: rgb(240, 90, 120);
 }
 .wrap-up__js{}
 .wrap-up__js--heading{
