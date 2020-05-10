@@ -206,10 +206,17 @@ overflow: hidden;
 .wrap-up__tool--content{
   color: #6b2c39;
 }
+.wrap-up__tool__terminal--content{
+  background-color: black;
+  color: white;
+}
 .wrap-up__tool__image--kanban{
   box-sizing: border-box;
   float: right;
   margin: 0 32px;
+}
+.wrap-up__tool__image--terminal{
+  float: right;
 }
 
 
