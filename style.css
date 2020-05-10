@@ -157,6 +157,9 @@ overflow: hidden;
 float :right;
 margin: 0 32px;
 }
+.wrap-up__html__image--tag-construction{
+  max-width: 450px;
+}
 .wrap-up__interview{}
 .wrap-up__interview--heading{
 color: crimson;
