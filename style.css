@@ -36,6 +36,19 @@
   font-family:cursive;
   color: #20493b;
 }
+.main{}
+.main__header{}
+.main__heading{
+  color: #008bf8;
+}
+.navigation{}
+.navigation__link{}
+.website__main{}
+.website__header{}
+.website__heading{}
+.website__description{
+  color: #3769d7;
+}
 .wrap-up__browser{}
 .wrap-up__browser--heading{
   color: #01486e;
@@ -114,14 +127,5 @@ body {
   background-color: cornsilk;
 }
 code{
-  background-color: rgba(220,220,220,.5);
-  background-color: rgb(198, 220, 241);
   background-color: rgb(196, 216, 241);
 }
-.main-heading{
-  color: #008bf8;
-}
-.website-description{
-  color: #3769d7;
-}
-
