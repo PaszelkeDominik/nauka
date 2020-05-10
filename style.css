@@ -53,12 +53,13 @@ color: blue;
   position: sticky;
   top:0px;
   background-color:cornsilk ;
+  z-index: 1000;
 }
 .navigation{
   height: 35px;
   width: 100%;
   top: 0;
-  border:  red 1px;;
+
 }
 .navigation__link{}
 .website__main{}
@@ -75,6 +76,7 @@ color: blue;
 .wrap-up--image{
 position: relative;
 left: 25%;
+z-index: 0;
 }
 
 .wrap-up__browser--heading,.wrap-up__browser__subsection--heading,.wrap-up__css--heading,.wrap-up__homework--heading,
@@ -82,6 +84,7 @@ left: 25%;
 .wrap-up__naming--heading,.wrap-up__tool--heading,.wrap-up__interview--heading,
 .independent-wrok__element--heading,.independent-wrok__literal--heading,.independent-wrok--heading,.independent-wrok__attribute--heading{
   margin-left:32px;
+  margin-top: 50px;
 }
 .wrap-up__browser--content,.wrap-up__browser__subsection--content,.wrap-up__css--content,.wrap-up__homework--content,
 .wrap-up__html--content,.wrap-up__js--content,.wrap-up__js__subsection--content,.wrap-up__layers--content,
@@ -117,18 +120,18 @@ left: 25%;
 .wrap-up__homework--content{
   color: #3769d7;
 }
-.wrap-up__html{  }
+.wrap-up__html{  
+  overflow: hidden;
+}
 .wrap-up__html--heading{
   color: #f77f00;
 }
 .wrap-up__html--content{
   color: #e75414;
 }
-.wrap-up__image--kanban{
-  box-sizing: border-box;
-  float: right;
-  margin: 0 32px;
- 
+.wrap-up__html__image--logo{
+float :right;
+margin: 0 32px;
 }
 .wrap-up__interview{}
 .wrap-up__interview--heading{
@@ -173,7 +176,11 @@ color: crimson;
 }
 .wrap-up__tool--content{
   color: #6b2c39;
-  
+}
+.wrap-up__tool__image--kanban{
+  box-sizing: border-box;
+  float: right;
+  margin: 0 32px;
 }
 
 
