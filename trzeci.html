@@ -24,9 +24,9 @@
     <header>
       <h1 class="main-heading">Tydzień trzeci</h1>
     </header>
-    <section>
-      <h2 class="lessons-heading">Lekcje</h2>
-      <p class="lessons-display">
+    <section class="lessons-list">
+      <h2 class="lessons-list__heading">Lekcje</h2>
+      <p class="lessons-list__content">
         Lekcja 03.01 Tydzień III + rozwiązania tydzień II
         <br>Lekcja 03.02 Kanban
         <br>Lekcja 03.03 WTF: HTML II
@@ -37,20 +37,24 @@
         <br>Lekcja 03.08 Terminal
         <br>Lekcja 03.09 Prace domowe tydzień III
       </p>
-      <article>
-        <h3 class="kanban-heading">Kanban</h3>
+    </section>
+    <section class="wrap-up">
+      <h2 class="wrap-up__heading">Lessons wrap-up</h2>
+      <img class="wrap-up--image" src="images/wrap-up.jpg" alt="writing wrap-up">
+      <article class="wrap-up__tool">
+        <h3 class="wrap-up__tool--heading">Kanban</h3>
         <img src="images/kanban-tablica.jpg" alt="tablica z karteczkami, kanban" title="kanban">
-        <p class="kanban-content">
+        <p class="wrap-up__tool--content">
           Kanban oznacza spis widoczny. Pozwala na planowanie pracy i śledzenie postępów. Dzielimy zadania na minimum 3
           kolumny:<b> TO DO | DOING | DONE</b>
           <br>Narzędzie pozwalające pracować w metodologi kanban <a href="https://trello.com"
             target="_blank">trello</a>.
         </p>
       </article>
-      <article>
-        <h3 class="html-heading">WTF: HTML II</h3>
+      <article class="wrap-up__html">
+        <h3 class="wrap-up__html--heading" class="html-heading">WTF: HTML II</h3>
         <img src="images/logo-html5.png" alt="logo HTML5">
-        <p class="html-content">
+        <p class="wrap-up__html--content" class="html-content">
           Poznajemy nowe elementy:
           <br> &#60;br&#62; nowa lina
           <br> &#60;b&#62; &#60;b&#62; vs &#60;i&#62;&#60;em&#62;
@@ -67,20 +71,20 @@
             target="_blank">link</a>
         </p>
       </article>
-      <article>
-        <h3 class="naming-heading">Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h3>
+      <article class="wrap-up__naming">
+        <h3 class="wrap-up__naming--heading">Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h3>
         <img src="images/camel-case.png" alt="wielbłąd">
-        <p class="naming-content">
+        <p class="wrap-up__naming--content">
           * Pliki:małą literą, kebab-Case lub snake_Case
           * Funkcje: camelCase
           * Klasy: kebab-Case
           * Zmienne: camelCase
         </p>
       </article>
-      <article>
-        <h3 class="css-heading">WTF: CSS II</h3>
+      <article class="wrap-up__css">
+        <h3 class="wrap-up__css--heading" class="css-heading">WTF: CSS II</h3>
         <img src="images/logo-css.png" alt="logo css">
-        <p class="css-content">
+        <p class="wrap-up__css--content" class="css-content">
           * Stylowanie <em>inline</em>
           * Id za pomocą #
           * Klasa za pomocą . (kropki)
@@ -88,43 +92,45 @@
           * Important po wartosci właściwości w naszej regule wpisujemy !important;
         </p>
       </article>
-      <article>
-        <h3 class="browser-heading">Jak działa Internet i przeglądarka</h3>
+      <article class="wrap-up__browser">
+        <h3 class="wrap-up__browser--heading">Jak działa Internet i przeglądarka</h3>
         <img src="images/logo-przegladarki-internetowe.jpg" alt="logo przeglądarek internetowych">
-        <p class="browser-content">
+        <p class="wrap-up__browser--content">
           * HTTP : Protokół, którego używa Twoja przeglądarka (<em>Hypertext Transfer Protocol</em>)
           * HTTPS : Protokół, którego używa Twoja przeglądarka wersja szyfrowana (<em>Hypertext Transfer Protocol
             Secure</em>)
           * URL : Uniform Resource Locator
         </p>
-        <h4 class="http-status-code-heading">Kody odpowiedzi</h4>
-        <p class="http-status-code-content">
-          - 1xx - wczytywanie
-          <br> - 200 - wszystko ok
-          <br> - 30x – szukasz w złym miejscu
-          <br> - 404 –Nie znaleziono – serwer nie odnalazł zasobu według podanego URL ani niczego co by wskazywało na
-          istnienie takiego zasobu w przeszłości
-          <br> -50x – Błąd zewnętrzny serwera
-        </p>
+        <section class="wrap-up__browser__subsection">
+          <h4 class="wrap-up__browser__subsection--heading" class="http-status-code-heading">Kody odpowiedzi</h4>
+          <p class="wrap-up__browser__subsection--content" class="http-status-code-content">
+            - 1xx - wczytywanie
+            <br> - 200 - wszystko ok
+            <br> - 30x – szukasz w złym miejscu
+            <br> - 404 –Nie znaleziono – serwer nie odnalazł zasobu według podanego URL ani niczego co by wskazywało na
+            istnienie takiego zasobu w przeszłości
+            <br> -50x – Błąd zewnętrzny serwera
+          </p>
+        </section>
       </article>
-      <article>
-        <h3 class="js-heading">WTF: JavaScript</h3>
+      <article class="wrap-up__js">
+        <h3 class="wrap-up__js--heading">WTF: JavaScript</h3>
         <img src="images/logo-js.png" alt="logo JavaScript">
-        <p class="js-content">
+        <p class="wrap-up__js--content">
           Aby dołączyć plik ze skryptem musimy wpisać na samym końcu naszego <b>body</b> &#60;script
           src=”main.js”&#62;&#60;/script&#62; . Kod JS uruchamia się raz (po załadowaniu strony).
         </p>
-        <section>
-          <h4 class="js-sub-heading">ECMAScript 6+</h4>
-          <p class="js-content">
+        <section class="wrap-up__js__subsection">
+          <h4 class="wrap-up__js__subsection--heading">ECMAScript 6+</h4>
+          <p class="wrap-up__js__subsection--content">
             ECMAScript jest to ustandaryzowany przez organizację ECMA skryptowy język programowania. JavaScript
             implementuje rzeczy ze specyfikacji ECMAScript.
             Rozwój ECMAScript mocno przyśpieszył przez szerokie wykorzystywanie JavaScriptu.
           </p>
         </section>
-        <section>
-          <h4 class="js-sub-heading">Narzędzia w JS</h4>
-          <p class="js-content">
+        <section class="wrap-up__js__subsection">
+          <h4 class="wrap-up__js__subsection--heading">Narzędzia w JS</h4>
+          <p class="wrap-up__js__subsection--content">
             const firstName = 'Dominik';
             <br>const age = 30;
             <br>console.log(firstName);
@@ -136,10 +142,10 @@
         </section>
       </article>
 
-      <article>
-        <h3 class="terminal-heading">Terminal</h3>
+      <article class="wrap-up__tool">
+        <h3  class="wrap-up__tool--heading" >Terminal</h3>
         <img src="images/logo-terminal.png" alt="logo Terminal">
-        <p class="terminal-content">
+        <p class="wrap-up__tool--content">
           cd~ przejście do katalogu domowego
           <br>ls ~ wypisanie zawartości katalogu
           <br>cd .. przejście do katalogu wyżej
@@ -150,21 +156,21 @@
         </p>
       </article>
 
-      <article>
-        <h3 class="homework-heading">Prace domowe tydzień III</h3>
-        <p class="homework-content">
+      <article class="wrap-up__homework">
+        <h3 class="wrap-up__homework--heading" class="homework-heading">Prace domowe tydzień III</h3>
+        <p class="wrap-up__homework--content" class="homework-content">
           Praca domowa zrobiona!
         </p>
       </article>
     </section>
-    <section>
-      <h2>Wiedza dodatkowa</h2>
-      <p>
+    <section class="independent-wrok">
+      <h2  class="independent-wrok--heading">Wiedza dodatkowa</h2>
+      <p  class="independent-wrok--content">
         Dodatkowe informacje na które natknąłem się w internetach, z własnej ciekawości
       </p>
-      <article>
-        <h3>Jak zapisać literały HTLM-u w nim samy jako zwykły tekst?</h3>
-        <p>
+      <article class="independent-wrok__literal">
+        <h3 class="independent-wrok__literal--heading" >Jak zapisać literały HTLM-u w nim samy jako zwykły tekst?</h3>
+        <p  class="independent-wrok__literal--content">
           Z początku potrzebowałem tylko &lt; i &gt; . Skończyło się na wygooglowaniu ich. Ale przy innej okazji
           wykopałem listę innych znaków.Aby wpisać określony znak wpisujemy <b>&</b> a następnie odpowiednie
           znaki referencyjne do określonego literału np. dla &gt; wpisujemy <b>&</b><b>g</b><b>t</b><b>;</b>
@@ -176,9 +182,9 @@
           <br>&amp; <b>&</b><b>a</b><b>m</b><b>p</b><b>;</b>
         </p>
       </article>
-      <article>
-        <h3>Nowe atrybuty</h3>
-        <p>
+      <article  class="independent-wrok__attribute">
+        <h3 class="independent-wrok__attribute--heading">Nowe atrybuty</h3>
+        <p class="independent-wrok__attribute--content">
           * Atrybut <code>target</code> pozwala na ustawienie kontekstu w jakim przeglądarka powinna go otworzyć.
           <strong>target równy _blank</strong> otwiera link w nowej karcie w naszej przeglądarce.
           <code>target="_blank"</code>
@@ -188,13 +194,14 @@
           użytkownikowi po najechaniu na element kursorem ukazuje się jego tytuł.
         </p>
       </article>
-      <article>
-        <h3>Nowe elementy</h3>
-        <p>
+      <article class="independent-wrok__element">
+        <h3 class="independent-wrok__element--heading">Nowe elementy</h3>
+        <p class="independent-wrok__element--content">
           * <code>&lt;input type="text" disabled&gt;</code> oraz <code>&lt;input type="text" &gt;</code>
           <br>Powyższy kod HTML da efekt:
           <input type="text" disabled> oraz <input type="text">
-          <br>Atrybutowi <code>disabled</code> nie trzeba przypisywać wartości, ponieważ ma on tylko jedną. Samo dołączenie go ustawia
+          <br>Atrybutowi <code>disabled</code> nie trzeba przypisywać wartości, ponieważ ma on tylko jedną. Samo
+          dołączenie go ustawia
           wartość na „true” tzn. <code>disabled=”disabled”</code>
         </p>
       </article>
