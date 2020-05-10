@@ -106,12 +106,18 @@ z-index: 0;
 .wrap-up__browser__subsection--content{
   color: #a12a31;
 }
-.wrap-up__css{}
+.wrap-up__css{
+overflow: hidden;
+}
 .wrap-up__css--heading{
   color: #0bd45f;
 }
 .wrap-up__css--content{
   color: #067c37;
+}
+.wrap-up__css__image--logo{
+  float: left;
+  margin-right: 10px;
 }
 .wrap-up__homework{}
 .wrap-up__homework--heading{
@@ -161,12 +167,18 @@ color: crimson;
 .wrap-up__layers--content{
   color: #6b2c39;
 }
-.wrap-up__naming{}
+.wrap-up__naming{
+  overflow: hidden;
+}
 .wrap-up__naming--heading{
   color: #01486e;
 }
 .wrap-up__naming--content{
   color: #6b2c39;
+}
+.wrap-up__naming--image{
+  float: left;
+  margin-right: 10px;
 }
 .wrap-up__tool{
   overflow: hidden;
