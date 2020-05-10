@@ -137,6 +137,9 @@ overflow: hidden;
   float: left;
   margin-right: 10px;
 }
+.wrap-up__css__image--rule-construction{
+  max-width: 450px;
+}
 .wrap-up__homework{}
 .wrap-up__homework--heading{
   color: #008bf8;
