@@ -80,7 +80,7 @@ z-index: 0;
 }
 
 .wrap-up__browser--heading,.wrap-up__css--heading,.wrap-up__homework--heading,
-.wrap-up__html--heading,.wrap-up__js--heading,.wrap-up__js__subsection--heading,.wrap-up__layers--heading,
+.wrap-up__html--heading,.wrap-up__js--heading,.wrap-up__layers--heading,
 .wrap-up__naming--heading,.wrap-up__tool--heading,.wrap-up__interview--heading,
 .independent-wrok__element--heading,.independent-wrok__literal--heading,.independent-wrok--heading,.independent-wrok__attribute--heading{
   margin-left:32px;
@@ -158,12 +158,17 @@ color: crimson;
 .wrap-up__interview--content{
   color: rgb(240, 90, 120);
 }
-.wrap-up__js{}
+.wrap-up__js{
+overflow: hidden;
+}
 .wrap-up__js--heading{
   color: #dc0073;
 }
 .wrap-up__js--content{
   color: #a52395;
+}
+.wrap-up__js__image--logo{
+  float: right;
 }
 .wrap-up__js__subsection{}
 .wrap-up__js__subsection--heading{
