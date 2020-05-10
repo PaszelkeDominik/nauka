@@ -45,6 +45,9 @@ color: blue;
   font-family:cursive;
   color: #20493b;
 }
+.link--codepen{
+  font-size: larger;
+}
 .main{}
 .main__header{}
 .main__heading{
@@ -185,7 +188,7 @@ overflow: hidden;
   color: #01486e;
 }
 .wrap-up__layers--content{
-  color: #6b2c39;
+  color: #a02941;
 }
 .wrap-up__naming{
   overflow: hidden;
