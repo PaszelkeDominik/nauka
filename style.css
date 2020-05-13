@@ -4,6 +4,7 @@ html{
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  
 }
 .body{
   margin: 0 25% 8px ;;
@@ -53,6 +54,9 @@ color: blue;
 }
 .link--codepen{
   font-size: larger;
+}
+.list--style-none{
+  list-style: none;
 }
 .main{}
 .main__header{}

@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tydzień czwarty</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
   <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <link href="images/book.ico" rel="icon" type="image/x-icon">
 </head>
-<body>
-  <header class="navigaton--sticky" >
+
+<body class="body" id="top">
+  <header class="navigaton--sticky">
     <nav class="navigation">
       <a class="navigation__link" href="index.html" title="Strona główna">Strona główna</a>
       <a class="navigation__link" href="pierwszy.html">Tydzień pierwszy</a>
       <a class="navigation__link" href="drugi.html">Tydzień drugi</a>
-      <a class="navigation__link"  href="trzeci.html">Tydzień trzeci</a>
-      <a class="navigation__link"  href="czwarty.html">Tydzień czwarty</a>
-      <a class="navigation__link"  href="piaty.html">Tydzień piąty✅</a>
+      <a class="navigation__link" href="trzeci.html">Tydzień trzeci</a>
+      <a class="navigation__link" href="czwarty.html">Tydzień czwarty</a>
+      <a class="navigation__link" href="piaty.html">Tydzień piąty✅</a>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <header class="main__header">
       <h1 class="main__heading">Tydzień piąty</h1>
     </header>
     <section class="lessons-list">
       <h2 class="lessons-list__heading">Lekcje</h2>
       <p class="lessons-list__content">
-        <ul>
-          <li>Lekcja 05.01 Tydzień V + rozwiązania tydzień IV</li>
-          <li>Lekcja 05.02 WTF: Klan</li>
-          <li>Lekcja 05.03 JS: funkcje</li>
-          <li>Lekcja 05.04 JS: Obiekt</li>
-          <li>Lekcja 05.05 JS: Immutability w obiektach</li>
-          <li>Lekcja 05.06 U mnie (nie) działa</li>
-          <li>Lekcja 05.07 HTML: Listy, tabele, definicje</li>
-          <li>Lekcja 05.08 Flexbox</li>
-          <li>Lekcja 05.09 Normalizacja vs reset</li>
-          <li>Lekcja 05.10 Tła</li>
-          <li>Lekcja 05.11 Grafik cięcie – też zajęcie</li>
-          <li>Lekcja 05.12 Prace domowe tydzień V</li>
-        </ul>
-     
+      <ul>
+        <li>Lekcja 05.01 Tydzień V + rozwiązania tydzień IV</li>
+        <li>Lekcja 05.02 WTF: Klan</li>
+        <li>Lekcja 05.03 JS: funkcje</li>
+        <li>Lekcja 05.04 JS: Obiekt</li>
+        <li>Lekcja 05.05 JS: Immutability w obiektach</li>
+        <li>Lekcja 05.06 U mnie (nie) działa</li>
+        <li>Lekcja 05.07 HTML: Listy, tabele, definicje</li>
+        <li>Lekcja 05.08 Flexbox</li>
+        <li>Lekcja 05.09 Normalizacja vs reset</li>
+        <li>Lekcja 05.10 Tła</li>
+        <li>Lekcja 05.11 Grafik cięcie – też zajęcie</li>
+        <li>Lekcja 05.12 Prace domowe tydzień V</li>
+      </ul>
       </p>
     </section>
-    <section>
+    <section class="wrap-up">
+      <h2 class="wrap-up__heading">Lessons wrap-up</h2>
+      <img class="wrap-up--image" src="images/wrap-up.jpg" alt="writing wrap-up">
+      <article class="wrap-up__tool">
+        <h3 class="wrap-up__tool--heading">WTF: Klan</h3>
+        <p class="wrap-up__tool--content">
+          DOM- A w nim rodzina elementów. Pojedyńczy element to węzeł/node.
+          Relacje między elementami: rodzic-dziecko.
+          Dziedziczenie - dzieci dostają atrybuty rodzica o ile same nie mają go zdefiniowanego. do dziedziczenia
+          używamy własności: inherit;.
+        </p>
+      </article>
+      <article class="wrap-up__js">
+        <h3 class="wrap-up__js--heading">JS: funkcje</h3>
+        <p class="wrap-up__js--content">
+        <ul class="list--style-none">
+          <li>function calculate(myNumber){</li>
+          <ul class="list--style-none">
+            <li>return myNumber*7;</li>
+          </ul>
+          <li>}</li>
+        </ul>
+        Funkcja zawsze coś zwraca. Nawet jak <em>brakuje</em> słowa "return" - wted zwraca <em>undefined</em>.
+        <div class="definition">DRY - Don't Repeat yourself</div>
+        (Fat)arrow function:
+        <ul class="list--style-none">
+          <li>const calculate = (myNumber) =>{</li>
+          <ul class="list--style-none">
+            <li>return myNumber*7;</li>
+          </ul>
+          <li>}</li>
+        </ul>
+        lub (skrócony zapis)
+        <ul class="list--style-none">
+          <li>const calculate = (myNumber) =>myNumber*7;</li>
+        </ul>
+        (Fat)arrow function nie tworzy nowego kontekstu <em>this</em>, nie ma dostępu do <em>arguments</em> i
+        <em>super</em>.
+        </p>
+       
+        </articl>
 
     </section>
 
   </main>
   <footer class="footer"><a href="#top">Powrót na górę strony</a></footer>
 </body>
+
 </html>
