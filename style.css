@@ -59,6 +59,13 @@ color: blue;
   list-style: none;
  
 }
+.list-dispalay{
+  max-width: 20vw;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
 .main{}
 .main__header{}
 .main__heading{
@@ -223,6 +230,7 @@ color: #a52395;
 }
 .wrap-up__tool{
   overflow: hidden;
+  color: #6b2c39;
 }
 .wrap-up__tool--heading{
   color: #01486e;
