@@ -27,8 +27,7 @@
     </header>
     <section class="lessons-list">
       <h2 class="lessons-list__heading">Lekcje</h2>
-      <p class="lessons-list__content">
-      <ul>
+      <ul class="lessons-list__content">
         <li>Lekcja 05.01 Tydzień V + rozwiązania tydzień IV</li>
         <li>Lekcja 05.02 WTF: Klan</li>
         <li>Lekcja 05.03 JS: funkcje</li>
@@ -42,7 +41,7 @@
         <li>Lekcja 05.11 Grafik cięcie – też zajęcie</li>
         <li>Lekcja 05.12 Prace domowe tydzień V</li>
       </ul>
-      </p>
+
     </section>
     <section class="wrap-up">
       <h2 class="wrap-up__heading">Lessons wrap-up</h2>
@@ -58,15 +57,14 @@
       </article>
       <article class="wrap-up__js">
         <h3 class="wrap-up__js--heading">JS: funkcje</h3>
-        <p class="wrap-up__js--content">
         <ul class="list--style-none">
           <li>function calculate(myNumber){</li>
           <ul class="list--style-none">
             <li>return myNumber*7;</li>
           </ul>
           <li>}</li>
+          Funkcja zawsze coś zwraca. Nawet jak <em>brakuje</em> słowa "return" - wted zwraca <em>undefined</em>.
         </ul>
-        Funkcja zawsze coś zwraca. Nawet jak <em>brakuje</em> słowa "return" - wted zwraca <em>undefined</em>.
         <div class="definition">DRY - Don't Repeat yourself</div>
         (Fat)arrow function:
         <ul class="list--style-none">
@@ -76,16 +74,49 @@
           </ul>
           <li>}</li>
         </ul>
-        lub (skrócony zapis)
         <ul class="list--style-none">
+          lub (skrócony zapis)
           <li>const calculate = (myNumber) =>myNumber*7;</li>
         </ul>
-        (Fat)arrow function nie tworzy nowego kontekstu <em>this</em>, nie ma dostępu do <em>arguments</em> i
-        <em>super</em>.
+        <p class="wrap-up__js--content">
+          (Fat)arrow function nie tworzy nowego kontekstu <em>this</em>, nie ma dostępu do <em>arguments</em> i
+          <em>super</em>.
         </p>
-       
-        </articl>
-
+      </article>
+      <article class="wrap-up__js">
+        <h3 class="wrap-up__js--heading">JS: Obiekt</h3>
+        <div class="definition">Obiekt jest strukturą danych</div>
+        <ul class="list--style-none">
+          Obiekt składa, się z własności (zmiennych) i metod (funkcji).
+          <li>const nazwaObiektu = {</li>
+          <ul class="list--style-none">
+            <li>(definicja obiektu)</li>
+            <li>własność = Klucz: Vartość;</li>
+            <li>inny obiekt
+            <li>
+            <li>funkcja = metoda</li>
+          </ul>
+        </ul>
+        <p class="wrap-up__js--content">
+          . dot notation
+          <br>[] bracket notation - w nawiasie musimy podać nazwę własności za pomocą <strong>stringa</strong> - tzn. w
+          apostrofie.
+        </p>
+      </article>
+      <article class="wrap-up__js">
+        <h3 class="wrap-up__js--heading">JS: Immutability w obiektach</h3>
+        <p class="wrap-up__js--content">
+          Własności obiektów można mutować. Zmieniając wartość w obiekcie zmieniamy ją we wszystkich własnościach, które
+          wskazują na ten obiekt. Żeby tego uniknąć, musimy za pomocą dot notation wskazać na własność tego obiektu,
+          tzn. stworzyć nowy obiekt.
+        </p>
+      </article>
+      <article>
+        <h3></h3>
+        <P>
+          
+        </P>
+      </article>
     </section>
 
   </main>

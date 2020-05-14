@@ -57,6 +57,7 @@ color: blue;
 }
 .list--style-none{
   list-style: none;
+ 
 }
 .main{}
 .main__header{}
@@ -182,6 +183,7 @@ color: crimson;
 }
 .wrap-up__js{
 overflow: hidden;
+color: #a52395;
 }
 .wrap-up__js--heading{
   color: #dc0073;
