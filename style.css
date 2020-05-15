@@ -57,6 +57,7 @@ color: blue;
 }
 .list--style-none{
   list-style: none;
+  color:inherit;
  
 }
 .list-dispalay{
@@ -145,6 +146,7 @@ margin: 5px 0;
 }
 .wrap-up__css{
 overflow: hidden;
+color: #067c37;
 }
 .wrap-up__css--heading{
   color: #0bd45f;
@@ -168,6 +170,7 @@ overflow: hidden;
 }
 .wrap-up__html{  
   overflow: hidden;
+  color: #e75414;
 }
 .wrap-up__html--heading{
   color: #f77f00;
