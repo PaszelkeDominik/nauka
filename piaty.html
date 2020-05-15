@@ -148,8 +148,8 @@
           <li></li>
         </ul>
       </article>
-      <article>
-        <h3>HTML: Listy, tabele, definicje</h3>
+      <article class="wrap-up__html">
+        <h3 class="wrap-up__html--heading">HTML: Listy, tabele, definicje</h3>
         <p>ul - unordered list
           <br>li - list item
         </p>
@@ -210,6 +210,180 @@
             <dd>description </dd>
           </dl>
         </div>
+        <div>
+          <table>
+            <caption>opis tabeli</caption>
+            <thead>
+              <tr>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>22</td>
+                <td>33</td>
+              </tr>
+              <tr>
+                <td>111</td>
+                <td>222</td>
+                <td>333</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="list--style-none">
+            <li>&lt;table&gt;</li>
+            <ul class="list--style-none">
+              <li>&lt;caption&gt;opis tabeli&lt;/caption&gt;</li>
+              <li>&lt;thead&gt;</li>
+              <ul class="list--style-none">
+                <li>&lt;tr&gt;</li>
+                <ul class="list--style-none">
+                  <li>&lt;th&gt;I&lt;/th&gt; &lt;th&gt;II&lt;/th&gt; &lt;th&gt;III&lt;/th&gt;</li>
+                </ul>
+                <li>&lt;/tr&gt;</li>
+              </ul>
+              <li>&lt;/thead&gt;</li>
+              <li>&lt;tbody&gt;</li>
+              <ul class="list--style-none">
+                <li>&lt;tr&gt;</li>
+                <ul class="list--style-none">
+                  <li>&lt;td&gt;1&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;3&lt;/td&gt;</li>
+                </ul>
+                <li>&lt;/tr&gt;</li>
+              </ul>
+              <ul class="list--style-none">
+                <li>&lt;tr&gt;</li>
+                <ul class="list--style-none">
+                  <li>&lt;td&gt;11&lt;/td&gt; &lt;td&gt;22&lt;/td&gt; &lt;td&gt;33&lt;/td&gt;</li>
+                </ul>
+                <li>&lt;/tr&gt;</li>
+              </ul>
+              <ul class="list--style-none">
+                <li>&lt;tr&gt;</li>
+                <ul class="list--style-none">
+                  <li>&lt;td&gt;111&lt;/td&gt; &lt;td&gt;222&lt;/td&gt; &lt;td&gt;333&lt;/td&gt;</li>
+                </ul>
+                <li>&lt;/tr&gt;</li>
+              </ul>
+              <li>&lt;/tbody&gt;</li>
+            </ul>
+            <li>&lt;/table&gt;</li>
+          </ul>
+        </div>
+      </article>
+      <article class="wrap-up__css">
+        <h3 class="wrap-up__css--heading">Flexbox</h3>
+        <dl>
+          <dt>display: flex;</dt>
+          <dd>
+            -"nowy" system pozycjonowania i rozmieszczania elementów. flex pracuje w dwóch osiach: wiersz/kolumna.
+          </dd>
+          <dt>flex-direction:</dt>
+          <dd>
+            - właściwość ustawiająca elementy flexu wzglendemjego kontenera. Okteślając główną oś i kierunek.
+            <ul class="list--style-none">
+              <li>row; - wartość domyslna</li>
+              <li>column;</li>
+              <li>row-reverse;</li>
+              <li>column-reverse;</li>
+            </ul>
+          </dd>
+          <dt>flex-wrap:</dt>
+          <dd>
+            - wrap- zawijanie wiersza/kolumny. Jeżeli kontent, niemieści się w jednym wierszu/ kolumnie, pozwala na
+            wyświetlenie go w kilku.
+            <ul class="list--style-none">
+              <li>nowrap; - wartość domyslna</li>
+              <li>wrap;</li>
+              <li>wrap-reverse;</li>
+            </ul>
+          </dd>
+          <dt>flex-flow: </dt>
+          <dd>
+            - shorthand, zawiera dwie własności w jedną.
+            <ul class="list--style-none">
+              <li>&lt;flex-direction&gt; &lt;flex-wrap&gt;;</li>
+            </ul>
+          </dd>
+          <dt>justify-content:</dt>
+          <dd>
+            - ustawia elementy wzdłuż osi flex-direction. Określa sposób w jaki elementy, sa ustawione wzglendem siebie
+            i/lub ich kontenera.
+            <ul class="list--style-none">
+              <li>flex-start; - wartość domyslna</li>
+              <li>flex-end;</li>
+              <li>center;</li>
+              <li>space-between;</li>
+              <li>space-around;</li>
+            </ul>
+          </dd>
+          <dt>align-content:</dt>
+          <dd>
+            - ustawia rozmieszczenie przestrzeni pomiędzy i dookoła zawartości względem osi przeciwnej do
+            flex-direction.
+            <ul class="list--style-none">
+              <li>stretch;</li>
+              <li>flrx-start;</li>
+              <li>flex-end;</li>
+              <li>center;</li>
+              <li>space-between;</li>
+              <li>space-around;</li>
+            </ul>
+          </dd>
+          <dt>align-items:</dt>
+          <dd>
+            - ustawia <strong>elementy</strong> wzdłuż osi przeciwnej do flex-direction.
+            <ul class="list--style-none">
+              <li>stretch;</li>
+              <li>flrx-start;</li>
+              <li>flex-end;</li>
+              <li>center;</li>
+              <li>baseline;</li>
+            </ul>
+          </dd>
+          <dt>align-self:</dt>
+          <dd>
+            - ustawia element wzdłuż osi przeciwnej do flex-direction. Ustawia się bezpośrednio na elemencie.
+            <ul class="list--style-none">
+              <li>stretch;</li>
+              <li>flrx-start;</li>
+              <li>flex-end;</li>
+              <li>center;</li>
+              <li>baseline;</li>
+            </ul>
+          </dd>
+          <dt>order: 0;</dt>
+          <dd>
+            - definiuje kolejność elementu, Wartościa są cyfry. Pierwszeństwo otrzymuje mniejsza liczba. Dopuszcza liczby ujemne.
+          </dd>
+          <dt>flex-grow: 0;</dt>
+          <dd>
+            - określa ile miejsca, element powinien zajmować, proporcjonalnie do innych elementów.
+          </dd>
+          <dt>flex-shrink: 1;</dt>
+          <dd>
+            - określa proporcję w jakich elementy się kurczą, jeżeli nie mieszczą się w kontenerze.
+          </dd>
+          <dt>flex-basis: __px;</dt>
+          <dd>
+            - własność ustawiająca wielkość elementu. Określa rozmiar pola zawartości, o ile nie ustawiono inaczej z wielkością box-sizing.
+          </dd>
+          <dt>flex: </dt>
+          <dd>
+            - shorthand, zawiera trzy własności w jedną.
+            <ul class="list--style-none">
+              <li>&lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;;</li>
+            </ul>
+          </dd>
+        </dl>
       </article>
     </section>
 
