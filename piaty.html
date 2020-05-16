@@ -290,10 +290,10 @@
           <dd>
             - właściwość ustawiająca elementy flexu wzglendemjego kontenera. Okteślając główną oś i kierunek.
             <ul class="list--style-none">
-              <li>row; - wartość domyslna</li>
-              <li>column;</li>
-              <li>row-reverse;</li>
-              <li>column-reverse;</li>
+              <li>: row; - wartość domyslna</li>
+              <li>: column;</li>
+              <li>: row-reverse;</li>
+              <li>: column-reverse;</li>
             </ul>
           </dd>
           <dt>flex-wrap:</dt>
@@ -301,9 +301,9 @@
             - wrap- zawijanie wiersza/kolumny. Jeżeli kontent, niemieści się w jednym wierszu/ kolumnie, pozwala na
             wyświetlenie go w kilku.
             <ul class="list--style-none">
-              <li>nowrap; - wartość domyslna</li>
-              <li>wrap;</li>
-              <li>wrap-reverse;</li>
+              <li>: nowrap; - wartość domyslna</li>
+              <li>: wrap;</li>
+              <li>: wrap-reverse;</li>
             </ul>
           </dd>
           <dt>flex-flow: </dt>
@@ -318,11 +318,11 @@
             - ustawia elementy wzdłuż osi flex-direction. Określa sposób w jaki elementy, sa ustawione wzglendem siebie
             i/lub ich kontenera.
             <ul class="list--style-none">
-              <li>flex-start; - wartość domyslna</li>
-              <li>flex-end;</li>
-              <li>center;</li>
-              <li>space-between;</li>
-              <li>space-around;</li>
+              <li>: flex-start; - wartość domyslna</li>
+              <li>: flex-end;</li>
+              <li>: center;</li>
+              <li>: space-between;</li>
+              <li>: space-around;</li>
             </ul>
           </dd>
           <dt>align-content:</dt>
@@ -330,34 +330,34 @@
             - ustawia rozmieszczenie przestrzeni pomiędzy i dookoła zawartości względem osi przeciwnej do
             flex-direction.
             <ul class="list--style-none">
-              <li>stretch;</li>
-              <li>flrx-start;</li>
-              <li>flex-end;</li>
-              <li>center;</li>
-              <li>space-between;</li>
-              <li>space-around;</li>
+              <li>: stretch;</li>
+              <li>: flrx-start;</li>
+              <li>: flex-end;</li>
+              <li>: center;</li>
+              <li>: space-between;</li>
+              <li>: space-around;</li>
             </ul>
           </dd>
           <dt>align-items:</dt>
           <dd>
             - ustawia <strong>elementy</strong> wzdłuż osi przeciwnej do flex-direction.
             <ul class="list--style-none">
-              <li>stretch;</li>
-              <li>flrx-start;</li>
-              <li>flex-end;</li>
-              <li>center;</li>
-              <li>baseline;</li>
+              <li>: stretch;</li>
+              <li>: flrx-start;</li>
+              <li>: flex-end;</li>
+              <li>: center;</li>
+              <li>: baseline;</li>
             </ul>
           </dd>
           <dt>align-self:</dt>
           <dd>
             - ustawia element wzdłuż osi przeciwnej do flex-direction. Ustawia się bezpośrednio na elemencie.
             <ul class="list--style-none">
-              <li>stretch;</li>
-              <li>flrx-start;</li>
-              <li>flex-end;</li>
-              <li>center;</li>
-              <li>baseline;</li>
+              <li>: stretch;</li>
+              <li>: flrx-start;</li>
+              <li>: flex-end;</li>
+              <li>: center;</li>
+              <li>: baseline;</li>
             </ul>
           </dd>
           <dt>order: 0;</dt>
@@ -389,7 +389,8 @@
       </article>
       <article class="wrap-up__css">
         <h3 class="wrap-up__css--heading">Normalizacja vs reset</h3>
-        <p class="wrap-up__css--content">Przeglądarka nadaje własne style. Dlatego warto użyć resetu lub normalizacji. Reset wyłącza domyślne(za
+        <p class="wrap-up__css--content">Przeglądarka nadaje własne style. Dlatego warto użyć resetu lub normalizacji.
+          Reset wyłącza domyślne(za
           pomocą <strong>*</strong> - selektor uniwersalny, wybiera wszystkie elementy na stronie)
           ustawienia. Normalizacja, za pomocą osobnego pliku <strong>normalize.css</strong> ustawiamy własne początkowe
           style dla nowego projektu. Plik ten pobinien być załadowany przed plikiem z właściwymi stylami. </p>
@@ -426,6 +427,74 @@
           </ul>
           }
         </ul>
+      </article>
+      <article class="wrap-up__css">
+        <h3 class="wrap-up__css--heading">Tła</h3>
+        <dl>
+          <dt>background-image: url(`ścieżka-do-pliku`);</dt>
+          <dd>- ścieżka względem pliku .css</dd>
+          <dt>backgroung-position: center center;</dt>
+          <dd>- ustawia początkowż pozycję dla tła-obrazu</dd>
+          <dt>background-repeat:</dt>
+          <dd>
+            - właściwość, która ustawia jak obrazkowe tło się powtarza. Może powtarzać się, horyzontalnie, vertykalnie,
+            na całej powierzchni oraz wcale się nie powtarzać. Za pomocą dwóch wartości (horyzontalna vertykalna)
+            mixujemy efekt, np.<strong>background-repeat: space repeat;</strong>.
+            <ul class="list--style-none">
+              <li>: repeat;</li>
+              <li>: repeat-x</li>
+              <li>: repeat-y</li>
+              <li>: round;</li>
+              <li>: space;</li>
+              <li>: no-repeat;</li>
+            </ul>
+          </dd>
+          <dt>backgroung-attachment:</dt>
+          <dd>
+            - właściwość, która ustawia sposób w jaki tło w viewport jest przymocowane(attached).
+            <ul class="list--style-none">
+              <li>: scroll; -domyślnie</li>
+              <li>: fixed;</li>
+              <li>: local;</li>
+            </ul>
+          </dd>
+          <dt>backgroung-origin:</dt>
+          <dd>
+            - Właściwość nadająca pozycję od, której tło powinno, się zaczynać. From the border start, inside the
+            border, or inside the padding.
+            <ul class="list--style-none">
+              <li>: border-box;</li>
+              <li>: padding-box;</li>
+              <li>: content-box;</li>
+            </ul>
+          </dd>
+          <dt>backgroung-clip:</dt>
+          <dd>
+            - Właściwość, która ustawia tło elementu w określonej strefie border-box-u.
+            <ul class="list--style-none">
+              <li>: border-box;</li>
+              <li>: padding-box;</li>
+              <li>: content-box;</li>
+              <li>: text;</li>
+            </ul>
+          </dd>
+          <dt>background-color:</dt>
+          <dd>
+            - kolor. rgb(a) -a- alfa, tzn. przezroczystość tła.
+          </dd>
+          <dt>backgroung-size:</dt>
+          <dd>
+            - rozmiar.
+            <ul>
+              <li>: auto;</li>
+              <li>: cover;</li>
+              <li>: contain;</li>
+              <li>: &lt;width&gt; &lt;height&gt;</li>
+            </ul>
+          </dd>
+          <dt>Gradienty</dt>
+          <dd>Tlo obrazujące przejście pomiędzy kolorami. <a target="_blank" href="https://cssgradient.io/">link</a></dd>
+        </dl>
       </article>
     </section>
 
