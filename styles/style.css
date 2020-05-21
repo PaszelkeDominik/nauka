@@ -10,7 +10,7 @@ html {
   margin: auto;
   max-width: 500px;
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
   background-color: cornsilk;
   background: rgb(215,160,148);
   background: linear-gradient(142deg, rgba(215,160,148,1) 0%, rgba(255,248,220,1) 41%, rgba(241,185,172,1) 100%);}
@@ -74,6 +74,7 @@ html {
   padding-bottom: 55px;
 }
 .main {
+  min-height: 100%;
 }
 .main__header {
 }
@@ -85,27 +86,41 @@ html {
   position: sticky;
   top: 0px;
   background-color: #fff8dc;
-  background-color: inherit;
-  
+  background-color: inherit; 
   z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
 }
 .navigation {
-  height: auto;
-  width: 100%;
+  position: relative;
   top: 0;
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-direction: column;
   align-content: space-between;
+  align-items: flex-end;
+  width: 170px;
+  display: none;
+ 
+
 }
 .navigation__link {
-  /* display: inline-block; */
+  width: 170px;
   border:  solid 1px;
   padding: 5px;
-  /* background: rgb(3,56,200);
-  background: linear-gradient(142deg, rgba(3,56,200,1) 0%, rgba(172,220,241,1) 12%, rgba(172,220,241,1) 88%, rgba(3,56,200,1) 100%); */
   background: rgb(172,220,241);
-  background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);}
+  background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);
+}
+.navigation__menu{
+  background: rgb(172,220,241);
+  background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);
+}
+.navigation--show{
+  display: flex;
+}
+
 .website__main {
 }
 .website__header {
@@ -122,9 +137,7 @@ html {
   color: #3f612d;
 }
 .wrap-up--image {
-  position: relative;
-  left: 25%;
-  z-index: 0;
+ max-width: 319px;
 }
 
 .wrap-up__browser--heading,
