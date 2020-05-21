@@ -107,7 +107,7 @@ html {
 }
 .navigation__link {
   width: 170px;
-  height: 50px;
+  min-height: 50px;
   border:  solid 1px;
   padding: 15px;
   background: rgb(172,220,241);
@@ -316,4 +316,22 @@ html {
 
 code {
   background-color: rgb(196, 216, 241);
+}
+
+
+@media screen and (min-width: 780px){
+  .navigation__menu{
+    display: none;
+  }
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .navigaton--fixed{
+  position: sticky;
+  display: block;
+  }
+  
+
 }
