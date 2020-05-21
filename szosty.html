@@ -157,8 +157,10 @@
           </dd>
           <dt class="list--description-term">type="checkbox"</dt>
           <dd>
-            opcja zaznaczenia wielokrotnej odpowiedzi. w <strong>value</strong>="podajemy wartość, którą chemy wysłąć z formularzem".
-            Brak podania atrybutu value oznacza wysłanie "On". Atrybut <strong>checked</strong> zaznacza odpowiedz domyslnie.
+            opcja zaznaczenia wielokrotnej odpowiedzi. w <strong>value</strong>="podajemy wartość, którą chemy wysłąć z
+            formularzem".
+            Brak podania atrybutu value oznacza wysłanie "On". Atrybut <strong>checked</strong> zaznacza odpowiedz
+            domyslnie.
           </dd>
         </dl>
       </article>
@@ -182,6 +184,63 @@
             używany do wyboru plików.
           </dd>
         </dl>
+      </article>
+      <article class="wrap-up__html">
+        <h3 class="wrap-up__html--heading">Formularze: select, textarea, submit </h3>
+        <ul class="list--style-none">
+          <li>&lt;p&gt;</li>
+          <li>&lt;label for="age"&gt;Your age: &lt;/label&gt;</li>
+          <li>&lt;select name="age" id="age"&gt;</li>
+          <ul class="list--style-none">
+            <li>&lt;option value="under 18"&gt; under 18 &lt;/option&gt;</li>
+            <li>&lt;option value="18-25"&gt; 18-25 &lt;/option&gt;</li>
+            <li>&lt;option value="26-31"&gt; 26-31 &lt;/option&gt;</li>
+            <li>&lt;option value="32-45"&gt; 32-45 &lt;/option&gt;</li>
+            <li>&lt;option value="45+"&gt; 45+ &lt;/option&gt;</li>
+          </ul>
+          <li>&lt;/select&gt;</li>
+          <li>&lt;/p&gt;</li>
+        </ul>
+        <p>
+          <label for="age">Your age: </label>
+          <select name="age" id="age">
+            <option value="under 18">under 18</option>
+            <option value="18-25">18-25</option>
+            <option value="26-31">26-31</option>
+            <option value="32-45">32-45</option>
+            <option value="45+">45+</option>
+          </select>
+        </p>
+        <ul class="list--style-none">
+          <li>&lt;fieldset&gt;</li>
+          <li>&lt;legend&gt; Opinia &lt;/legend&gt;</li>
+          <li>&lt;p&gt;</li>
+          <li>&lt;label for="feedback"&gt;Opinia:&lt;label&gt;</li>
+          <li>&lt;br&gt;</li>
+          <li>&lt;textarea name="feedback" id="feedback" cols="30" rows="10"&gt;&lt;/textarea&gt;</li>
+          <li>&lt;/p&gt;</li>
+          <li>&lt;/fieldset&gt;</li>
+        </ul>
+        <fieldset>
+          <legend>Opinia</legend>
+          <p>
+            <label for="feedback">Opinia:</label>
+            <br>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+          </p>
+        </fieldset>
+        <ul>
+          <li>&lt;p&gt;</li>
+          <li>&lt;input type="submit"&gt;</li>
+          <li>&lt;/p&gt;</li>
+        </ul>
+        <p>
+          <input type="submit">
+        </p>
+        <p>
+          Aby submit zadziałał trzeba w &lt;form action="podać adres gdzie wysyłamy"&gt;
+        </p>
+
       </article>
 
 
