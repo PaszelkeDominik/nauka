@@ -150,6 +150,17 @@
           </ul>
           <li>&lt;/form&gt;</li>
         </ul>
+        <fieldset>
+          <legend>Favorite color: </legend>
+          <p>
+            <input type="radio" name="color" id="color" value="blue">
+            <label for="color">blue</label>
+          </p>
+          <p>
+            <input type="radio" name="color" id="color" value="magneta">
+            <label for="color">magneta</label>
+          </p>
+        </fieldset>
         <dl>
           <dt class="list--description-term">type="radio"</dt>
           <dd>
@@ -175,6 +186,17 @@
           <dd>
             "suwak" od 0 do 100. wybieralne wartosci co 20.
           </dd>
+          <p>
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="5" value="50" list="tickmarks">
+            <datalist id="tickmarks">
+              <option value="0" label="0"></option>
+              <option value="25"></option>
+              <option value="50"></option>
+              <option value="75"></option>
+              <option value="100" label="100"></option>
+            </datalist>
+          </p>
           <dt class="list--description-term">type="password"</dt>
           <dd>
             zasłania wprowadzony text.
