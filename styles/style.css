@@ -12,8 +12,14 @@ html {
   position: relative;
   min-height: 100vh;
   background-color: cornsilk;
-  background: rgb(215,160,148);
-  background: linear-gradient(142deg, rgba(215,160,148,1) 0%, rgba(255,248,220,1) 41%, rgba(241,185,172,1) 100%);}
+  background: rgb(215, 160, 148);
+  background: linear-gradient(
+    142deg,
+    rgba(215, 160, 148, 1) 0%,
+    rgba(255, 248, 220, 1) 41%,
+    rgba(241, 185, 172, 1) 100%
+  );
+}
 .footer {
   margin: 80px 0px 20px;
 }
@@ -52,11 +58,12 @@ html {
 .lessons-list {
 }
 .lessons-list__heading {
-  font-family: cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3f612d;
 }
 .lessons-list__content {
-  font-family: cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
   color: #20493b;
 }
 .link--codepen {
@@ -66,6 +73,10 @@ html {
   list-style: none;
   color: inherit;
 }
+.list--description-term{
+  font-weight: bolder;
+  margin-left: 15px;
+}
 .list-dispalay {
   max-width: 20vw;
   display: flex;
@@ -73,12 +84,15 @@ html {
   justify-content: space-between;
   padding-bottom: 55px;
 }
+
 .main {
   min-height: 100%;
 }
 .main__header {
 }
 .main__heading {
+  display: flex;
+  justify-content: center;
   color: #008bf8;
 }
 
@@ -87,7 +101,7 @@ html {
   top: 0px;
   right: 0px;
   background-color: #fff8dc;
-  background-color: inherit; 
+  background-color: inherit;
   z-index: 1000;
   display: flex;
   justify-content: flex-end;
@@ -108,17 +122,25 @@ html {
 .navigation__link {
   width: 170px;
   min-height: 50px;
-  border:  solid 1px;
+  border: solid 1px;
   padding: 15px;
-  background: rgb(172,220,241);
-  background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);
+  background: rgb(172, 220, 241);
+  background: radial-gradient(
+    circle,
+    rgba(172, 220, 241, 1) 79%,
+    rgba(3, 56, 200, 1) 95%
+  );
   text-decoration: none;
 }
-.navigation__menu{
-  background: rgb(172,220,241);
-  background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);
+.navigation__menu {
+  background: rgb(172, 220, 241);
+  background: radial-gradient(
+    circle,
+    rgba(172, 220, 241, 1) 79%,
+    rgba(3, 56, 200, 1) 95%
+  );
 }
-.navigation--show{
+.navigation--show {
   display: flex;
 }
 
@@ -138,9 +160,10 @@ html {
   color: #3f612d;
 }
 .wrap-up--image {
- max-width: 319px;
+  width: 100%;
 }
-
+.lessons-list__heading,
+.wrap-up__heading,
 .wrap-up__browser--heading,
 .wrap-up__css--heading,
 .wrap-up__homework--heading,
@@ -172,10 +195,10 @@ html {
 .independent-wrok__literal--content,
 .independent-wrok--content,
 .independent-wrok__attribute--content {
-  margin: 0px;
+  margin: 10px;
 }
 .wrap-up__browser {
-  margin: 5px 0;
+  margin: 5px;
 }
 .wrap-up__browser--heading {
   color: #01486e;
@@ -318,20 +341,23 @@ code {
   background-color: rgb(196, 216, 241);
 }
 
-
-@media screen and (min-width: 780px){
-  .navigation__menu{
+@media screen and (min-width: 780px) {
+  .lessons-list__heading {
+    font-family: cursive;
+  }
+  .lessons-list__content {
+    font-family: cursive;
+  }
+  .navigation__menu {
     display: none;
   }
-  .navigation{
+  .navigation {
     display: flex;
     flex-direction: row;
     width: auto;
   }
-  .navigaton--fixed{
-  position: sticky;
-  display: block;
+  .navigaton--fixed {
+    position: sticky;
+    display: block;
   }
-  
-
 }

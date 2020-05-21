@@ -205,9 +205,9 @@
             &lt;/dl&gt;
           </ul>
           <dl>
-            <dt>term</dt>
+            <dt class="list--description-term">term</dt>
             <dd>description </dd>
-            <dt>term</dt>
+            <dt class="list--description-term">term</dt>
             <dd>description </dd>
           </dl>
         </div>
@@ -283,11 +283,11 @@
       <article class="wrap-up__css">
         <h3 class="wrap-up__css--heading">Flexbox</h3>
         <dl>
-          <dt>display: flex;</dt>
+          <dt class="list--description-term">display: flex;</dt>
           <dd>
             -"nowy" system pozycjonowania i rozmieszczania elementów. flex pracuje w dwóch osiach: wiersz/kolumna.
           </dd>
-          <dt>flex-direction:</dt>
+          <dt class="list--description-term">flex-direction:</dt>
           <dd>
             - właściwość ustawiająca elementy flexu wzglendemjego kontenera. Okteślając główną oś i kierunek.
             <ul class="list--style-none">
@@ -297,7 +297,7 @@
               <li>: column-reverse;</li>
             </ul>
           </dd>
-          <dt>flex-wrap:</dt>
+          <dt class="list--description-term">flex-wrap:</dt>
           <dd>
             - wrap- zawijanie wiersza/kolumny. Jeżeli kontent, niemieści się w jednym wierszu/ kolumnie, pozwala na
             wyświetlenie go w kilku.
@@ -307,14 +307,14 @@
               <li>: wrap-reverse;</li>
             </ul>
           </dd>
-          <dt>flex-flow: </dt>
+          <dt class="list--description-term">flex-flow: </dt>
           <dd>
             - shorthand, zawiera dwie własności w jedną.
             <ul class="list--style-none">
               <li>&lt;flex-direction&gt; &lt;flex-wrap&gt;;</li>
             </ul>
           </dd>
-          <dt>justify-content:</dt>
+          <dt class="list--description-term">justify-content:</dt>
           <dd>
             - ustawia elementy wzdłuż osi flex-direction. Określa sposób w jaki elementy, sa ustawione wzglendem siebie
             i/lub ich kontenera.
@@ -326,7 +326,7 @@
               <li>: space-around;</li>
             </ul>
           </dd>
-          <dt>align-content:</dt>
+          <dt class="list--description-term">align-content:</dt>
           <dd>
             - ustawia rozmieszczenie przestrzeni pomiędzy i dookoła zawartości względem osi przeciwnej do
             flex-direction.
@@ -339,7 +339,7 @@
               <li>: space-around;</li>
             </ul>
           </dd>
-          <dt>align-items:</dt>
+          <dt class="list--description-term">align-items:</dt>
           <dd>
             - ustawia <strong>elementy</strong> wzdłuż osi przeciwnej do flex-direction.
             <ul class="list--style-none">
@@ -350,7 +350,7 @@
               <li>: baseline;</li>
             </ul>
           </dd>
-          <dt>align-self:</dt>
+          <dt class="list--description-term">align-self:</dt>
           <dd>
             - ustawia element wzdłuż osi przeciwnej do flex-direction. Ustawia się bezpośrednio na elemencie.
             <ul class="list--style-none">
@@ -361,25 +361,25 @@
               <li>: baseline;</li>
             </ul>
           </dd>
-          <dt>order: 0;</dt>
+          <dt class="list--description-term">order: 0;</dt>
           <dd>
             - definiuje kolejność elementu, Wartościa są cyfry. Pierwszeństwo otrzymuje mniejsza liczba. Dopuszcza
             liczby ujemne.
           </dd>
-          <dt>flex-grow: 0;</dt>
+          <dt class="list--description-term">flex-grow: 0;</dt>
           <dd>
             - określa ile miejsca, element powinien zajmować, proporcjonalnie do innych elementów.
           </dd>
-          <dt>flex-shrink: 1;</dt>
+          <dt class="list--description-term">flex-shrink: 1;</dt>
           <dd>
             - określa proporcję w jakich elementy się kurczą, jeżeli nie mieszczą się w kontenerze.
           </dd>
-          <dt>flex-basis: __px;</dt>
+          <dt class="list--description-term">flex-basis: __px;</dt>
           <dd>
             - własność ustawiająca wielkość elementu. Określa rozmiar pola zawartości, o ile nie ustawiono inaczej z
             wielkością box-sizing.
           </dd>
-          <dt>flex: </dt>
+          <dt class="list--description-term">flex: </dt>
           <dd>
             - shorthand, zawiera trzy własności w jedną.
             <ul class="list--style-none">
@@ -432,11 +432,11 @@
       <article class="wrap-up__css">
         <h3 class="wrap-up__css--heading">Tła</h3>
         <dl>
-          <dt>background-image: url(`ścieżka-do-pliku`);</dt>
+          <dt class="list--description-term">background-image: url(`ścieżka-do-pliku`);</dt>
           <dd>- ścieżka względem pliku .css</dd>
-          <dt>backgroung-position: center center;</dt>
+          <dt class="list--description-term">backgroung-position: center center;</dt>
           <dd>- ustawia początkowż pozycję dla tła-obrazu</dd>
-          <dt>background-repeat:</dt>
+          <dt class="list--description-term">background-repeat:</dt>
           <dd>
             - właściwość, która ustawia jak obrazkowe tło się powtarza. Może powtarzać się, horyzontalnie, vertykalnie,
             na całej powierzchni oraz wcale się nie powtarzać. Za pomocą dwóch wartości (horyzontalna vertykalna)
@@ -450,7 +450,7 @@
               <li>: no-repeat;</li>
             </ul>
           </dd>
-          <dt>backgroung-attachment:</dt>
+          <dt class="list--description-term">backgroung-attachment:</dt>
           <dd>
             - właściwość, która ustawia sposób w jaki tło w viewport jest przymocowane(attached).
             <ul class="list--style-none">
@@ -459,7 +459,7 @@
               <li>: local;</li>
             </ul>
           </dd>
-          <dt>backgroung-origin:</dt>
+          <dt class="list--description-term">backgroung-origin:</dt>
           <dd>
             - Właściwość nadająca pozycję od, której tło powinno, się zaczynać. From the border start, inside the
             border, or inside the padding.
@@ -469,7 +469,7 @@
               <li>: content-box;</li>
             </ul>
           </dd>
-          <dt>backgroung-clip:</dt>
+          <dt class="list--description-term">backgroung-clip:</dt>
           <dd>
             - Właściwość, która ustawia tło elementu w określonej strefie border-box-u.
             <ul class="list--style-none">
@@ -479,11 +479,11 @@
               <li>: text;</li>
             </ul>
           </dd>
-          <dt>background-color:</dt>
+          <dt class="list--description-term">background-color:</dt>
           <dd>
             - kolor. rgb(a) -a- alfa, tzn. przezroczystość tła.
           </dd>
-          <dt>backgroung-size:</dt>
+          <dt class="list--description-term">backgroung-size:</dt>
           <dd>
             - rozmiar.
             <ul>
@@ -493,7 +493,7 @@
               <li>: &lt;width&gt; &lt;height&gt;</li>
             </ul>
           </dd>
-          <dt>Gradienty</dt>
+          <dt class="list--description-term">Gradienty</dt>
           <dd>Tlo obrazujące przejście pomiędzy kolorami. <a target="_blank" href="https://cssgradient.io/">link</a>
           </dd>
         </dl>
