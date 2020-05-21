@@ -82,9 +82,10 @@ html {
   color: #008bf8;
 }
 
-.navigaton--sticky {
-  position: sticky;
+.navigaton--fixed {
+  position: fixed;
   top: 0px;
+  right: 0px;
   background-color: #fff8dc;
   background-color: inherit; 
   z-index: 1000;
@@ -103,15 +104,15 @@ html {
   align-items: flex-end;
   width: 170px;
   display: none;
- 
-
 }
 .navigation__link {
   width: 170px;
+  height: 50px;
   border:  solid 1px;
-  padding: 5px;
+  padding: 15px;
   background: rgb(172,220,241);
   background: radial-gradient(circle, rgba(172,220,241,1) 79%, rgba(3,56,200,1) 95%);
+  text-decoration: none;
 }
 .navigation__menu{
   background: rgb(172,220,241);
