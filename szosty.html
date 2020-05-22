@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tydzień szósty</title>
   <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="styles/font-color.css" rel="stylesheet" type="text/css">
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <link href="images/book.ico" rel="icon" type="image/x-icon">
 
@@ -370,7 +371,8 @@
         </h3>
         <dl>
           <dt>RWD - Responsive Web Design</dt>
-          <dd>Koncepcja skupiająca się, na tworzeniu stron internetowych tak aby wyglądały i zachowywały się optymalnie na różnych urządzeniach</dd>
+          <dd>Koncepcja skupiająca się, na tworzeniu stron internetowych tak aby wyglądały i zachowywały się optymalnie
+            na różnych urządzeniach</dd>
           <dt>moblile first:</dt>
           <dd>
             posejście polegające na tym aby stylować stronę w pierwszej kolejności na urządzenia mobilna a
@@ -383,6 +385,56 @@
         </dl>
         <p>
           @media screen and (min-width: 780px){ własności dla ekranów z szerokością większą niż 780px ...}
+        </p>
+      </article>
+      <article class="wrap-up__js">
+        <h3 class="wrap-up__js--heading">
+          JS: Eventy
+        </h3>
+        <p class="wrap-up__js--content">
+          &lt;button class="action--js"&gt; ... &lt;/button&gt;
+        </p>
+        <dl>
+          <dt>button</dt>
+          <dd>
+            interakcje na stronie
+          </dd>
+          <dt>a</dt>
+          <dd>
+            nawigacja
+          
+          </dd>
+        </dl>
+        <p class="special__script-content">
+          <span class="blue">const</span>
+          <span class="seagreen">navigaton</span> =
+          <span class="steelblue">document</span>.
+          <span class="yellow">querySelector</span>(
+          <span class="peru">`.navigaton--js`</span>);<br>
+
+          <span class="blue">const</span>
+          <span class="seagreen">menu</span> =
+          <span class="steelblue">document</span>.
+          <span class="yellow">querySelector</span>(
+          <span class="peru">`.navigation__menu--js`</span>);<br>
+
+          <br>
+          <span class="seagreen">menu</span>.
+          <span class="yellow">addEventListener</span>(
+          <span class="peru">`click`</span>, () => {<br>
+          <span class="steelblue">navigaton</span>.
+          <span class="steelblue">classList</span>.
+          <span class="yellow">toggle</span>(
+          <span class="peru">`navigation--show`</span>);<br>
+          });<br>
+          <span class="steelblue" navigaton></span>.
+          <span class="yellow">addEventListener</span>(
+          <span class="peru">`mouseleave`</span>, () => {<br>
+          <span class="steelblue">navigaton</span>.
+          <span class="yellow">classList</span>.
+          <span class="yellow">remove</span>(
+          <span class="peru">`navigation--show`</span>);<br>
+          });<br>
         </p>
       </article>
 

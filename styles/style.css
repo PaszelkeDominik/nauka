@@ -160,6 +160,9 @@ grid-area:P;
 .navigation--show {
   display: flex;
 }
+.special__script-content{
+  background-color: rgb(34, 31, 31);
+}
 
 .website__main {
 }
