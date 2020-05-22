@@ -23,6 +23,23 @@ html {
 .footer {
   margin: 80px 0px 20px;
 }
+.grid-section{
+display: grid;
+grid-template-areas: 
+"P C "
+"P U";
+row-gap: 16px;
+line-height: 22px;
+}
+.grid-section__property{
+grid-area:P;
+}
+.grid-section__container{
+  grid-area:C ;
+}
+.grid-sectio__nunit{
+  grid-area:U ;
+}
 .independent-wrok {
 }
 .independent-wrok--heading {
@@ -342,6 +359,9 @@ code {
 }
 
 @media screen and (min-width: 780px) {
+  .grid-section{
+    grid-template-columns: 55% 45%;
+    }
   .lessons-list__heading {
     font-family: cursive;
   }
