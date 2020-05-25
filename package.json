@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "crazycow" : "cowsay -t ciec pyta ciecia ktora godzina?  ciecia"  ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
