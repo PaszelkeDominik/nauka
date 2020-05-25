@@ -6,6 +6,15 @@ html {
 *:after {
   box-sizing: inherit;
 }
+h3::before{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  content: "";
+  
+}
 .body {
   margin: auto;
   max-width: 500px;
