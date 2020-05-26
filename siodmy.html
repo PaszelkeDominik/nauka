@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tydzień siódmy</title>
-    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
-    <link href="styles/font-color.css" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="images/book.ico" rel="icon" type="image/x-icon">
-  
-  </head>
-<body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tydzień siódmy</title>
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="styles/font-color.css" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="images/book.ico" rel="icon" type="image/x-icon">
+
+</head>
+
+<body class="body" id="top">
   <header class="navigaton--fixed">
     <button class="navigation__menu navigation__menu--js">Menu</button>
     <nav class="navigation navigaton--js">
@@ -25,10 +27,27 @@
     </nav>
   </header>
   <main class="main">
+    <header class="main__header">
+      <h1 class="main__heading">Tydzień siódmy</h1>
+    </header>
+    <section class="lessons-list">
+      <h2 class="lessons-list__heading">Lekcje</h2>
+      <ul class="lessons-list__content">
+        <li>Lekcja 07.01 Tydzień VII + rozwiązania tydzień VI </li>
+        <li>Lekcja 07.02 Pseudoelementy & Pseudoselektory </li>
+        <li>Lekcja 07.03 .gitignore </li>
+        <li>Lekcja 07.04 Node.js </li>
+        <li>Lekcja 07.05 NPM i NPX </li>
+        <li>Lekcja 07.06 NPM Scripts </li>
+        <li>Lekcja 07.07 SASS / SCSS </li>
+        <li>Lekcja 07.08 node-sass </li>
+        <li>Lekcja 07.09 Prace domowe tydzień VII </li>
+      </ul>
+    </section>
 
-
-</main>
-
-<script src="cow.js"></script>
+  </main>
+  <footer class="footer"><a href="#top">Powrót na górę strony</a></footer>
+  <script src="hamburger-menu.js"></script>
 </body>
+
 </html>
