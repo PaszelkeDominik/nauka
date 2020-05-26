@@ -11,3 +11,4 @@ console.log(normalCow.think({ text: "hmmm" }));
 console.log(normalCow.say({ text: "no nie wiem, która?" }));
 console.log(crazyCow.say({ text: "ciecia XD", e: "oO", T: "U" }));
 
+
