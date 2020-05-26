@@ -31,6 +31,9 @@ h3::before {
   grid-template-areas: "P C " "P U";
   row-gap: 16px;
   line-height: 22px; }
+  @media screen and (min-width: 780px) {
+    .grid-section {
+      grid-template-columns: 55% 45%; } }
   .grid-section__property {
     grid-area: P; }
   .grid-section__container {
@@ -77,11 +80,19 @@ h3::before {
 .lessons-list__heading {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3f612d; }
+  @media screen and (min-width: 780px) {
+    .lessons-list__heading {
+      font-family: cursive;
+      margin-left: 32px;
+      margin-top: 50px; } }
 
 .lessons-list__content {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 20px;
   color: #20493b; }
+  @media screen and (min-width: 780px) {
+    .lessons-list__content {
+      font-family: cursive; } }
 
 .link--codepen {
   font-size: larger; }
@@ -108,7 +119,7 @@ h3::before {
     justify-content: center;
     color: #008bf8; }
 
-.navigaton--fixed {
+.header {
   position: fixed;
   top: 0px;
   right: 0px;
@@ -119,6 +130,16 @@ h3::before {
   justify-content: flex-end;
   flex-direction: row;
   align-items: flex-start; }
+  @media screen and (min-width: 780px) {
+    .header {
+      position: sticky;
+      display: block; } }
+  .header__menu {
+    background: #acdcf1;
+    background: radial-gradient(circle, #acdcf1 79%, #0338c8 95%); }
+    @media screen and (min-width: 780px) {
+      .header__menu {
+        display: none; } }
 
 .navigation {
   position: relative;
@@ -130,22 +151,21 @@ h3::before {
   align-items: flex-end;
   width: 170px;
   display: none; }
-
-.navigation__link {
-  width: 170px;
-  min-height: 50px;
-  border: solid 1px;
-  padding: 15px;
-  background: #acdcf1;
-  background: radial-gradient(circle, #acdcf1 79%, #0338c8 95%);
-  text-decoration: none; }
-
-.navigation__menu {
-  background: #acdcf1;
-  background: radial-gradient(circle, #acdcf1 79%, #0338c8 95%); }
-
-.navigation--show {
-  display: flex; }
+  .navigation--show {
+    display: flex; }
+  .navigation__link {
+    width: 170px;
+    min-height: 50px;
+    border: solid 1px;
+    padding: 15px;
+    background: #acdcf1;
+    background: radial-gradient(circle, #acdcf1 79%, #0338c8 95%);
+    text-decoration: none; }
+  @media screen and (min-width: 780px) {
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      width: auto; } }
 
 .special__script-content {
   background-color: #221f1f; }
@@ -289,22 +309,3 @@ h3::before {
 
 code {
   background-color: #c4d8f1; }
-
-@media screen and (min-width: 780px) {
-  .grid-section {
-    grid-template-columns: 55% 45%; }
-  .lessons-list__heading {
-    font-family: cursive;
-    margin-left: 32px;
-    margin-top: 50px; }
-  .lessons-list__content {
-    font-family: cursive; }
-  .navigation__menu {
-    display: none; }
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    width: auto; }
-  .navigaton--fixed {
-    position: sticky;
-    display: block; } }

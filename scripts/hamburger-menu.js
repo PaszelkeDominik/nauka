@@ -1,5 +1,5 @@
 const navigaton = document.querySelector(`.navigaton--js`);
-const menu = document.querySelector(`.navigation__menu--js`);
+const menu = document.querySelector(`.header__menu--js`);
 
 
 menu.addEventListener(`click`, () => {
