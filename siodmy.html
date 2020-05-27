@@ -174,9 +174,40 @@
           <h3 class="wrap-up__css--heading">
             SASS / SCSS
           </h3>
+          <div>
+            <p class="wrap-up__css--content">
+              Problemy z CSS:
+            </p>
+            <ul>
+              <li>porozrzucane klasy (bałagan w plikach).</li>
+              <li>@media oddzielone od elementu (konieczność ponownego definiowania.</li>
+              <li>kiepska czytelność plików (szczególnie przy zagnieżdżeniach. </li>
+              <li>brak możliwości robienia funkcji</li>
+            </ul>
+          </div>
           <p class="wrap-up__css--content">
-
+            sass to preprocesor css. Zamienia swoją składnię na składnię css(kod). Sass potrzebuje narzędzia do
+            działania. Sass sam w sobie, też jest narzedziem, rozszeza składnię css.
           </p>
+          <dl>
+            <dt class="list--description-term">@mixin</dt>
+            <dd> definicja funkcji </dd>
+            <dt class="list--description-term">@include</dt>
+            <dd> wywołanie funkcji</dd>
+            <dt class="list--description-term">extend</dt>
+            <dd>zawiera swpólne style </dd>
+            <dt class="list--description-term">&</dt>
+            <dd>Parent selector</dd>
+          </dl>
+          <ul class="list--style-none   ">
+            <li>@mixin borderBackgroundParameter ($radius, $background){</li>
+              <li>border-radius : $radius; </li>
+              <li>background : $background;</li>
+              <li>}</li>
+              <li>.main{</li>
+              <li>@include borderBackgroundParameter (13px, blue);</li>
+              <li>}</li>
+          </ul>
         </article>
         <article class="wrap-up__tool">
           <h3 class="wrap-up__tool--heading">
