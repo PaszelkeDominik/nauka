@@ -50,70 +50,105 @@
       <article class="wrap-up__css">
         <h3 class="wrap-up__css--heading">
           Pseudoelementy & Pseudoselektory
-          </h3>
+        </h3>
         <p class="wrap-up__css--content">
+          Za pomocą, dodania do selektora odpowiedniego słowa klucz, można stylować specyficzną część elementu.
+        </p>
+        <dl>
+          <dt class="list--description-term">::before & ::after</dt>
+          <dd>
+            Nie są elementem DOM. Za ich momoćą możemy stylować, odpowiednio przód i tyłelementu. Aby stworzyć nowy element, wykorzystujemy właściwość <strong>content:"...";</strong>
+          </dd>
+          <dt class="list--description-term">::hover</dt>
+          <dd>
+            zmienia działanie w momencie najechania kursorem myszy.
+          </dd>
+          <dt class="list--description-term">::visited</dt>
+          <dd>
+            Odnosi się do elementu, który da się odwiedzić, np. link.
+          </dd>
+          <dt class="list--description-term">::focus</dt>
+          <dd>
+            Reprezentuje element typu input. Jest głównie wywoływany poprzez kliknięcie lub klawisz "tab".
+          </dd>
+          <dt class="list--description-term">::first-child</dt>
+          <dd>
+            nadaje własności pod warunkiem, że jest pierwszym dzieckiem rodzica.
+          </dd>
+          <dt class="list--description-term">::last-child</dt>
+          <dd>
+            nadaje własności pod warunkiem, że jest ostatnim dzieckiem rodzica.
+          </dd>
+          <dt class="list--description-term">::not(.selector)</dt>
+          <dd>
+            Sprawia, iż własności są stosowane do elementów, które nie spełniają podanego kryterium.
+            np. <strong>(:hover) {własności }</strong>
+          </dd>
+        </dl>
+        <p>
+          <em>wincyj</em> klas pod <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blaned" class="">linkiem</a>
+        </p>
+        <article class="wrap-up__tool">
+          <h3 class="wrap-up__tool--heading">
+            .gitignore
+          </h3>
+          <p class="wrap-up__tool--content ">
+
           </p>
-          <article class="wrap-up__tool">
-            <h3 class="wrap-up__tool--heading">
-              .gitignore
-            </h3>
-            <p class="wrap-up__tool--content ">
-              
-            </p>
-          </article>
-          <article class="wrap-up__tool">
-            <h3 class="wrap-up__tool--heading">
-              Node.js
-            </h3>
-            <p class="wrap-up__tool--content ">
-              
-            </p>
-          </article>
-          <article class="wrap-up__tool">
-            <h3 class="wrap-up__tool--heading">
-              NPM i NPX 
-            </h3>
-            <p class="wrap-up__tool--content ">
-              
-            </p>
-          </article>
-          <article class="wrap-up__tool">
-            <h3 class="wrap-up__tool--heading">
-              NPM Scripts
-            </h3>
-            <p class="wrap-up__tool--content ">
-              
-            </p>
-          </article>
-          <article class="wrap-up__css">
-            <h3 class="wrap-up__css--heading">
-                  SASS / SCSS
-            </h3>
-            <p class="wrap-up__css--content">
-              
-            </p>
-          </article>
-          <article class="wrap-up__tool">
-            <h3 class="wrap-up__tool--heading">
-              node-sass
-            </h3>
-            <p class="wrap-up__tool--content ">
-              
-            </p>
-          </article>
-          <article class="wrap-up__homework">
-            <h3 class="wrap-up__homework--heading">Prace domowe tydzień VII</h3>
-            <p class="wrap-up__homework--content">
-              ogarnięte :)
-            </p>
-          </article>
-            
+        </article>
+        <article class="wrap-up__tool">
+          <h3 class="wrap-up__tool--heading">
+            Node.js
+          </h3>
+          <p class="wrap-up__tool--content ">
+
+          </p>
+        </article>
+        <article class="wrap-up__tool">
+          <h3 class="wrap-up__tool--heading">
+            NPM i NPX
+          </h3>
+          <p class="wrap-up__tool--content ">
+
+          </p>
+        </article>
+        <article class="wrap-up__tool">
+          <h3 class="wrap-up__tool--heading">
+            NPM Scripts
+          </h3>
+          <p class="wrap-up__tool--content ">
+
+          </p>
+        </article>
+        <article class="wrap-up__css">
+          <h3 class="wrap-up__css--heading">
+            SASS / SCSS
+          </h3>
+          <p class="wrap-up__css--content">
+
+          </p>
+        </article>
+        <article class="wrap-up__tool">
+          <h3 class="wrap-up__tool--heading">
+            node-sass
+          </h3>
+          <p class="wrap-up__tool--content ">
+
+          </p>
+        </article>
+        <article class="wrap-up__homework">
+          <h3 class="wrap-up__homework--heading">Prace domowe tydzień VII</h3>
+          <p class="wrap-up__homework--content">
+            ogarnięte :)
+          </p>
+        </article>
+
       </article>
 
 
 
 
-      </section>
+    </section>
   </main>
   <footer class="footer"><a href="#top">Powrót na górę strony</a></footer>
   <script src="scripts/hamburger-menu.js"></script>
