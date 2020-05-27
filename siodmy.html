@@ -57,7 +57,8 @@
         <dl>
           <dt class="list--description-term">::before & ::after</dt>
           <dd>
-            Nie są elementem DOM. Za ich momoćą możemy stylować, odpowiednio przód i tyłelementu. Aby stworzyć nowy element, wykorzystujemy właściwość <strong>content:"...";</strong>
+            Nie są elementem DOM. Za ich momoćą możemy stylować, odpowiednio przód i tyłelementu. Aby stworzyć nowy
+            element, wykorzystujemy właściwość <strong>content:"...";</strong>
           </dd>
           <dt class="list--description-term">::hover</dt>
           <dd>
@@ -86,14 +87,16 @@
           </dd>
         </dl>
         <p>
-          <em>wincyj</em> klas pod <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blaned" title="go to MDN Pseudo-classes ">linkiem</a>
+          <em>wincyj</em> klas pod <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+            target="_blaned" title="go to MDN Pseudo-classes ">linkiem</a>
         </p>
         <article class="wrap-up__tool">
           <h3 class="wrap-up__tool--heading">
             .gitignore
           </h3>
           <p class="wrap-up__tool--content ">
-            plik <strong>.gitignore</strong> zawiera zestaw reguł, które pozwalają nam na zdefiniowanie listy rzeczy, które nie powinny znajdować się w naszym repozytorium, np. pliki z hasłami.
+            plik <strong>.gitignore</strong> zawiera zestaw reguł, które pozwalają nam na zdefiniowanie listy rzeczy,
+            które nie powinny znajdować się w naszym repozytorium, np. pliki z hasłami.
           </p>
         </article>
         <article class="wrap-up__tool">
@@ -101,9 +104,13 @@
             Node.js
           </h3>
           <p class="wrap-up__tool--content ">
-              
 
-Node.JS jest platformą umożliwiającą uruchomienie kodu JavaScript. Platforma udostępnia API, którego najszerszym (lecz nie jedynym) zastosowaniem jest tworzenie stron internetowych opartych na programowaniu sterowanym zdarzeniami. Poza samą możliwością uruchomienia skryptów JavaScript w środowisku innym niż przeglądarka, platforma oferuje wiele modułów stanowiących potężny zestaw narzędzi programistycznych. -"to taki javascript uruchamiany poza przeglądarką"
+
+            Node.JS jest platformą umożliwiającą uruchomienie kodu JavaScript. Platforma udostępnia API, którego
+            najszerszym (lecz nie jedynym) zastosowaniem jest tworzenie stron internetowych opartych na programowaniu
+            sterowanym zdarzeniami. Poza samą możliwością uruchomienia skryptów JavaScript w środowisku innym niż
+            przeglądarka, platforma oferuje wiele modułów stanowiących potężny zestaw narzędzi programistycznych. -"to
+            taki javascript uruchamiany poza przeglądarką"
           </p>
         </article>
         <article class="wrap-up__tool">
@@ -111,8 +118,43 @@ Node.JS jest platformą umożliwiającą uruchomienie kodu JavaScript. Platforma
             NPM i NPX
           </h3>
           <p class="wrap-up__tool--content ">
-
+            npm - to repozytorium z gotowymi paczkami. Pozwala na dodanie do projektów sporo gotowych bibliotek/
+            narzędzi. Dzięki niemu nie trzeba polegać na konfiguracji edytora/ jego wtyczek. Jest uniwersalnym żródłem
+            ze wszystkimi narzędziami, oraz zapewnia dostęp do aktualizacji.
+          <p class="wrap-up__tool--content ">
+            npm to taka skrzynka z narzędziami, których możemy używać w naszym projekcie.</p>
           </p>
+          <p class="wrap-up__tool--content wrap-up__tool--terminal-content ">
+            npm init<br>
+            npm install nazwa-paczki --save<br>
+            npm install nazwa-paczki --save-dev<br>
+            npm install node-sass --save-dev<br>
+          </p>
+          <ul class="list--style-none wrap-up__css--content  ">
+            <li>--save opcja do instalacji rzeczy uzywanych w przeglądarce.</li>
+            <li>--save-dev do narzędzi, typowo do rozwoju oprogramowania, np.server lokalny.</li>
+          </ul>
+          <dL>
+            <dt class="list--description-term">package-lock.json</dt>
+            <dd>
+              trzyma informacje o tym co zainstalowaliśmy -"blokuje versje".
+            </dd>
+            <dt class="list--description-term">node_modules</dt>
+            <dd>
+              katalog z bibliotekami - nie edytujemy, tych plików! nie komitujemy!!
+            </dd>
+            <dt class="list--description-term">npx</dt>
+            <dd>
+              do korzystania z narzędzi bez ich instalacji.
+            </dd>
+            <dt class="list--description-term">YARN</dt>
+            <dd>
+              Yarn is a package manager that doubles down as project manager. Whether you work on one-shot projects or
+              large monorepos, as a hobbyist or an enterprise user, we've got you covered.
+            </dd>
+          </dL>
+
+
         </article>
         <article class="wrap-up__tool">
           <h3 class="wrap-up__tool--heading">
