@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
+    hamburgerMenu: "./src/js/hamburger-menu.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -54,7 +55,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index", "hamburgerMenu"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
@@ -62,6 +63,48 @@ module.exports = {
       inject: true,
       chunks: ["index", "another"],
       filename: "another.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/pierwszy.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "pierwszy.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/drugi.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "drugi.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/trzeci.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "trzeci.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/czwarty.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "czwarty.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/piaty.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "piaty.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/szosty.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "szosty.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/siodmy.html",
+      inject: true,
+      chunks: ["index", "hamburgerMenu"],
+      filename: "siodmy.html",
     }),
   ],
 };
